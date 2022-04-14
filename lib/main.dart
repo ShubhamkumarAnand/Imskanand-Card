@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,41 +17,41 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blueGrey[900],
         ),
         body: SafeArea(
-          child: Column(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                width: 100.0,
+                color: Colors.red,
                 height: 100.0,
-                color: Colors.cyan[300],
-                child: const Text('Hello, I\'m Shubham Kumar Anand'),
-              ),
-              const SizedBox(
-                height: 5.0,
+                width: 100.0,
               ),
               Container(
-                width: 100.0,
-                height: 100.0,
-                color: Colors.red[300],
-                child: const Text('Full Stack Developer'),
-              ),
-              const SizedBox(
-                height: 5.0,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      color: Colors.yellow,
+                      width: 100.0,
+                      height: 100.0,
+                    ),
+                    Container(
+                      color: Colors.green,
+                      width: 100.0,
+                      height: 100.0,
+                    )
+                  ],
+                ),
               ),
               Container(
-                width: 100.0,
+                color: Colors.teal,
                 height: 100.0,
-                color: Colors.blue[300],
-                child: const Text('Computer Science Undergraduate'),
-              ),
-              Container(
-                width: double.infinity,
-                height: 5,
-              ),
+                width: 100.0,
+              )
             ],
           ),
         ),
-        backgroundColor: Colors.teal[200],
+        backgroundColor: Colors.teal,
       ),
     );
   }

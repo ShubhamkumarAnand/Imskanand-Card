@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
                 width: 100.0,
@@ -24,18 +25,28 @@ class MyApp extends StatelessWidget {
                 color: Colors.cyan[300],
                 child: const Text('Hello, I\'m Shubham Kumar Anand'),
               ),
+              const SizedBox(
+                height: 5.0,
+              ),
               Container(
                 width: 100.0,
                 height: 100.0,
                 color: Colors.red[300],
                 child: const Text('Full Stack Developer'),
               ),
+              const SizedBox(
+                height: 5.0,
+              ),
               Container(
                 width: 100.0,
                 height: 100.0,
                 color: Colors.blue[300],
                 child: const Text('Computer Science Undergraduate'),
-              )
+              ),
+              Container(
+                width: double.infinity,
+                height: 5,
+              ),
             ],
           ),
         ),

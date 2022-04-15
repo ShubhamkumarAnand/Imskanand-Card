@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
-            children: const [
+            children: const <Widget>[
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage('images/imskanand.png'),
+                backgroundImage: AssetImage('images/imskanand.jpg'),
+                backgroundColor: Colors.transparent,
               ),
               Text(
                 'Shubham Kumar Anand',

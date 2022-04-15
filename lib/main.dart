@@ -17,11 +17,15 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/imskanand.jpg'),
                 backgroundColor: Colors.transparent,
+              ),
+              const SizedBox(
+                height: 10.0,
               ),
               const Text(
                 'Shubham Kumar Anand',
@@ -40,7 +44,60 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'SourceSansPro',
                   color: Colors.teal.shade100,
                 ),
-              )
+              ),
+              const SizedBox(
+                height: 10.0,
+              ),
+              Container(
+                color: Colors.white,
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    const Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    const SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+91 62998 44335',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    const Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    const SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'ishubham11anand@gmail.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 17.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

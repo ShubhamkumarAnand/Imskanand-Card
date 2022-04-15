@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Business Card',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
@@ -64,7 +65,7 @@ class MyApp extends StatelessWidget {
                       color: Colors.teal,
                     ),
                     title: Text(
-                      '+91 62998 44135',
+                      '+91 62998 44335',
                       style: TextStyle(
                         color: Colors.teal.shade900,
                         fontFamily: 'SourceSansPro',
@@ -81,11 +82,11 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    'iskanad@gmail.com',
+                    'ishubham11anad@gmail.com',
                     style: TextStyle(
                       color: Colors.teal.shade900,
                       fontFamily: 'SourceSansPro',
-                      fontSize: 20.0,
+                      fontSize: 15.0,
                     ),
                   ),
                 ),

@@ -17,23 +17,34 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
-            children: const <Widget>[
-              CircleAvatar(
+            children: <Widget>[
+              const CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/imskanand.jpg'),
                 backgroundColor: Colors.transparent,
               ),
-              Text(
+              const Text(
                 'Shubham Kumar Anand',
                 style: TextStyle(
-                  fontSize: 20.0,
+                  fontSize: 18.0,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontFamily: 'Pacifico',
+                ),
+              ),
+              Text(
+                'FULLSTACK FLUTTER DEVELOPER',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                  fontFamily: 'SourceSansPro',
+                  color: Colors.teal.shade100,
                 ),
               )
             ],
           ),
         ),
-        backgroundColor: Colors.teal[200],
+        backgroundColor: Colors.teal[500],
       ),
     );
   }

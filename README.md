@@ -4,7 +4,7 @@ A Business Card made in flutter
 
 # Output
 
-<img src="https://user-images.githubusercontent.com/56271682/163528039-59ab1e68-3115-4506-b2eb-a69adb63092a.jpg" width="280" height="600">
+<img src="https://user-images.githubusercontent.com/56271682/163531854-b158df7d-aa46-44ed-9603-206a5801720f.jpg" width="280" height="600">
 
 ## Getting Started
 

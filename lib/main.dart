@@ -30,11 +30,14 @@ class MyApp extends StatelessWidget {
               const Text(
                 'Shubham Kumar Anand',
                 style: TextStyle(
-                  fontSize: 18.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontFamily: 'Pacifico',
                 ),
+              ),
+              const SizedBox(
+                height: 10.0,
               ),
               Text(
                 'FULLSTACK FLUTTER DEVELOPER',
@@ -45,57 +48,46 @@ class MyApp extends StatelessWidget {
                   color: Colors.teal.shade100,
                 ),
               ),
-              const SizedBox(
-                height: 10.0,
+              SizedBox(
+                height: 30.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
               ),
-              Container(
-                color: Colors.white,
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 25.0),
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    const Icon(
+              Card(
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: const Icon(
                       Icons.phone,
                       color: Colors.teal,
                     ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+91 62998 44335',
+                    title: Text(
+                      '+91 62998 44135',
                       style: TextStyle(
                         color: Colors.teal.shade900,
                         fontFamily: 'SourceSansPro',
                         fontSize: 20.0,
                       ),
                     ),
-                  ],
-                ),
-              ),
-              Container(
-                color: Colors.white,
+                  )),
+              Card(
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 25.0),
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    const Icon(
-                      Icons.email,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'iskanad@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
                     ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'ishubham11anand@gmail.com',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 17.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
